@@ -1,6 +1,6 @@
 # Next.js 13(14) 
 
-## Install
+## Development environment setting process / Install
 ```bash
 npx create-next-app@latest .
 ```
