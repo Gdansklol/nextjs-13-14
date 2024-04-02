@@ -27,4 +27,30 @@ As for how to respond to content, here is Pass Create.
 
 Now, we create a folder called create under the app. And the promised name is page.js.
 
+## dynamic routing
+- 4:50
+Now, let's consider a somewhat more complicated situation. Now here is the html
+
+If you click, the path will be
+
+It's read/1. Now, the read here doesn't matter, but /1 is a bit troublesome.
+
+Why do I know what the right number is over there?
+
+You can not. Yes 2 may come
+
+100 million could come. we are that
+
+All pages can be created in advance
+
+There isn't one. So dynamically
+
+I have to create content.
+
+It's called dynamic routing. Now here
+
+Because the route is the first route lead
+
+We create a read folder under the app folder.
+
 - 
