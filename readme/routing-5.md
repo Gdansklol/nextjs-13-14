@@ -37,11 +37,12 @@ It's read/1. Now, the read here doesn't matter, but /1 is a bit troublesome.
 
 Why do I know what the right number is over there?
 
-You can not. Yes 2 may come
+You can not. Yes read/1 may come
 
-100 million could come. we are that
+read/100 million could come.
 
-All pages can be created in advance
+
+- we are that all pages can be created in advance
 
 There isn't one. So dynamically
 
@@ -52,5 +53,17 @@ It's called dynamic routing. Now here
 Because the route is the first route lead
 
 We create a read folder under the app folder.
+- app/read/[id]/page.js
 
-- 
+```js
+
+
+export default function Read(props) {
+    return(
+        <>
+        <h2>Read</h2>
+        read/parameters number:{props.params.id}
+        </>
+    )
+}
+```

@@ -1,4 +1,5 @@
 // import { Inter } from "next/font/google";
+import Link from 'next/link';
 import "./globals.css";
 
 // const inter = Inter({ subsets: ["latin"] });
@@ -16,14 +17,14 @@ export default function RootLayout({ children }) {
       {/* <body className={inter.className}>{children}</body> */}
       <h1><a href="/">WEB-demy</a></h1>
       <ol>
-        <li><a href="/read/1">HTML5</a></li>
-        <li><a href="/read/2">CSS</a></li>
-        <li><a href="/read/3">JS</a></li>
+        <li><Link href="/read/1">HTML5</Link></li>
+        <li><Link href="/read/2">CSS</Link></li>
+        <li><Link href="/read/3">JS</Link></li>
       </ol>
       {children}
       <ul>
-        <li><a href="/create">Create</a></li>
-        <li><a href="/update/1">Update</a></li>
+        <li><Link href="/create">Create</Link></li>
+        <li><Link href="/update/1">Update</Link></li>
         <li><input type="button" value="Delete"/></li>
       </ul>
       </body>

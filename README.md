@@ -41,3 +41,46 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+<hr/>
+
+## dynamic routing
+
+Now, let's consider a somewhat more complicated situation. Now here is the html
+
+If you click, the path will be
+
+It's read/1. Now, the read here doesn't matter, but /1 is a bit troublesome.
+
+Why do I know what the right number is over there?
+
+You can not. Yes read/1 may come
+
+read/100 million could come.
+
+
+- we are that all pages can be created in advance
+
+There isn't one. So dynamically
+
+I have to create content.
+
+It's called dynamic routing. Now here
+
+Because the route is the first route lead
+
+We create a read folder under the app folder.
+- app/read/[id]/page.js
+
+```js
+
+
+export default function Read(props) {
+    return(
+        <>
+        <h2>Read</h2>
+        read/parameters number:{props.params.id}
+        </>
+    )
+}
+```
