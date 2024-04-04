@@ -1,3 +1,12 @@
+# 07- Using static resources
+
+- add image which is hello.png
+in public folder
+/public/hello.png
+
+- app/paage.js
+
+```js
 import Image from "next/image";
 
 export default function Home() {
@@ -9,3 +18,5 @@ export default function Home() {
     </>
   );
 }
+
+```

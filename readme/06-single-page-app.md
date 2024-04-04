@@ -75,3 +75,11 @@ export default function RootLayout({ children }) {
 }
 
 ```
+
+- <Difference between a tag and nextjs Link tag>
+
+If you connect a link using the a tag, other parts such as the layout that do not change other than the page that needs to change when accessing the link are all downloaded by sending a request from beginning to end. (Can be checked in Developer Tools-Network tab)
+
+If you change the a tag to a Link tag and click it, only the page you want to go to will be requested. However, even with this, pages that have already been clicked and requested are rendered immediately without being downloaded again.
+
+-> It becomes a Single Page Application.
